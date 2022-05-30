@@ -1,0 +1,15 @@
+name: Using GitHub Actions
+on: push
+jobs:
+  using_github_actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print working directory
+        run: pwd
+      - name: Listing directory
+        run: ls -la
+      - name: Using actions to checkout repository
+        uses: actions/checkout@v3
+      - name: Listing directory
+        run: ls -la
+
